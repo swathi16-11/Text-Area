@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Counter</title>
+
+    <!--stylesheet link-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <div class="counter">
+            <h1>Displaying the Character Count of a Textarea</h1>
+            <textarea id="myTextarea" maxlength="200"></textarea>
+            <span id="charCount">0/200</span>
+            <div id="warningMsg" style="display:none;">
+                <span class="closebtn" onclick="this.parentElement.style.display='None';">&times;</span>
+                <strong>Warning!</strong>
+                Maximum characters reached!
+            </div>
+        </div>
+    </form>
+
+    <!--javascript link-->
+    <script src="script.js"></script>
+</body>
+</html>
